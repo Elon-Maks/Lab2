@@ -29,7 +29,7 @@ void readfile()
     char c;
     while (fread(&c,sizeof(c),1,f))
         printf("%c",c);
-    
+    fclose(f);
 }
 
 void sortfile()
